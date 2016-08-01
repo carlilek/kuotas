@@ -1,0 +1,33 @@
+{
+    "email settings":{
+        "server":"smtp.example.com",
+        "sender_address":"qumulo@example.com"
+    },
+    "qcluster":{
+        "name":"Qumulo",
+        "url":"qumulo.example.com"
+    },
+    "quotas":{
+        "engineering":{
+            "qumulo_path":"/filestore/departments/engineering",
+            "nfs_path":"/mnt/departments/engineering",
+            "quota_size":30.0,
+            "mail_to":[ "admins@example.com", "engmanager@example.com" ]
+        },
+        "hr":{
+            "qumulo_path":"/filestore/departments/hr",
+            "nfs_path":"/mnt/departments/hr",
+            "quota_size":5.0,
+            "mail_to":[ "admins@example.com", "hrmanager@example.com" ]
+        },
+        "development":{
+            "qumulo_path":"/filestore/departments/development",
+            "nfs_path":"/mnt/departments/development",
+            "quota_size":10.0,
+            "mail_to":[ "admins@example.com", "devmanager@example.com" ]
+        }
+    },
+    "output_log":{
+        "logfile":"./qumulo_usage.csv"
+    }
+}
